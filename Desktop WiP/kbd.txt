@@ -1,0 +1,395 @@
+====================================================================
+IBM PC KEYBOARD INFORMATION FOR SOFTWARE DEVELOPERS
+====================================================================
+Your host: Chris Giese <geezer[AT]execpc.com>
+http://www.execpc.com/~geezer/os
+
+Distribute freely. Last revised on 9/1/99.
+Sources:
+	PORTS.A of Ralf Brown's interrupt list collection
+	repairfaq.org keyboard FAQ at
+	    http://www.repairfaq.org/filipg/LINK/PORTS/F_Keyboard_FAQ.html
+	Linux source code
+Test hardware:
+	New Samsung KB3T001SAXAA 104-key keyboard
+	Old Maxi 2186035-00-21 101-key keyboard
+
+NO WARRANTY. NO GUARANTEE. I have tried to make this information
+accurate. I don't know if I succeeded. Corrections or additional
+information would be welcome.
+
+This is a plain-text document. If you use a word-processor to view
+it, use a fixed-pitch font (like Courier) so columnar data and
+ASCII art lines up properly.
+
+Lessons learned:
+- Both the 8048 MCU in the keyboard and the 8042 controller
+  on the motherboard accept command bytes.
+- There is a bit (KCC) in the poorly-named "Command Byte" which
+  seems to enable AT-to-XT scancode conversion (scancode set 2
+  to scancode set 1). After booting DOS, my keyboard uses
+  scancode set 2 with this conversion bit turned on. If I turn
+  the bit off and switch to scancode set 1, operation remains
+  the same.
+- There is no mystical magical mode where each key sends a unique
+  one-byte make code and a unique one-byte break code (this
+  would limit the keyboard design to 128 keys -- can't have that
+  (SARCASM)). The closest you can get is scancode set 3, which
+  sends unique one-byte make codes for every key (including
+  PrintScreen/SysReq and Pause/Break), with a break code
+  consisting of the same byte preceeded by F0h.
+- With the KCC bit on, I could instruct the keyboard to switch
+  to scancode set 1, 2, or 3, and the keyboard would respond
+  with ACK. However, when queried for the current scancode set,
+  the keyboard would return values like 0x41, 0x43, and 0x3F,
+  instead of 1, 2, or 3. It's a mystery...
+
+====================================================================
+KEYBOARD I/O REGISTERS ON THE PC
+====================================================================
+60h     data
+64h     command (write)
+64h	status (read)
+
+Bits in Status register (names from Linux source)
+    b7  PERR	parity error in data received from keyboard
+    b6  GTO	receive timeout
+    b5          transmit timeout (or PS/2 mouse?)
+    b4          keyboard is locked
+    b3          0=60h was the port last accessed, 1=61h was last (?)
+    b2          System Flag status: 0=power-up/reset, 1=selftest OK (?)
+    b1  IBF	input buffer full (data from host to keyboard)
+    b0	OBF	output buffer full (data from keyboard to host)
+
+
+Bits in Output Port (Table P0383 in PORTS.A)
+The Output Port is written by controller command D1h
+    b7          keyboard data output
+    b6          keyboard clock output
+    b5          input buffer NOT full
+    b4          output buffer NOT empty
+    b3          reserved
+    b2          reserved
+    b1          A20 gate
+    b0          system reset (THIS BIT SHOULD ALWAYS BE SET TO 1)
+
+Bits in Input Port
+The Input Port is read by controller command C0h
+    b7          keyboard NOT locked
+    b6          1=first video is MDA, 0=CGA
+    b5          1=normal, 0=factory test mode
+    b4          1=512K RAM, 0=256K
+
+Bits in "Command Byte" (confusing name; from Table P0404 in PORTS.A)
+The "Command Byte" is written by controller command 60h
+(names from Linux source)
+    b7          reserved
+    b6  KCC	convert to 8086 scan codes ("IBM PC compatibility mode")
+    b5  DMS	disables PS/2 mouse when set
+    b4          disables keyboard when set
+    b3          ignore keyboard lock switch when set
+    b2  SYS	System Flag (same as b2 in Status register, it seems)
+    b1          enables IRQ12 from PS/2 mouse when set
+    b0	EKI	enables IRQ1 on keyboard output buffer full
+
+Result Byte for interface self-test (Table P0406 in PORTS.A)
+Returned by controller command ABh
+    0           no error
+    1           keyboard clock line stuck low
+    2           keyboard clock line stuck high
+    3           keyboard data line stuck low
+    4           keyboard data line stuck high
+   FFh          "total error" (?)
+
+====================================================================
+CONTROLLER COMMANDS (written to port 64h; from Table P0401 of PORTS.A)
+====================================================================
+20h-2Fh     	reads byte with address=lower 5 bits of command
+		The byte at address 0 is the "Command Byte".
+60h-7Fh nn  	writes byte nn to address=lower 5 bits of command
+		The byte at address 0 is the "Command Byte".
+AAh		self-test (returns 55h if success, FCh if failure)
+ABh             self-test interface, returns Result Byte (see above)
+ACh         	(?)
+ADh             disables keyboard (sets b4 of "Command Byte")
+AEh             enables keyboard (clears b4 of "Command Byte")
+C0h         	reads Input Port
+D0h         	reads Output Port
+D1h nn      	writes Output Port
+DDh         	disable A20? (HP Vectra only?)
+DFh         	enable A20? (HP Vectra only?)
+E0h         	read test inputs. return value=
+		    b1      kbd data
+		    b0      kbd clock
+EDh nn      	write LEDs. nn=
+		    b2      Caps Lock
+		    b1      Num Lock
+		    b0      Scroll Lock
+F0h-FFh     	pulse bit(s) of Output Port low for 6 microseconds.
+		If b0-b3 of the command is low, the corresponding bit
+		in the Output Port will be pulsed low. b0=system reset,
+		and should ALWAYS be PULSED low, never set low constantly.
+
+====================================================================
+KEYBOARD COMMANDS (written to port 60h; from Table P0386 of PORTS.A)
+====================================================================
+EDh nn      	write LEDs, as above
+EEh         	echo, keyboard responds with EEh
+EFh         	no-operation (reserved)
+F0h nn      	selects scancode set nn=1-3 or 0 to return current set
+F1h         	(?)
+F2h         	read ID. Keyboard responds with ACK (FAh) and two optional
+		ID bytes:
+		    (none)	AT keyboard
+		    83h ABh   	(?)
+		    ABh 41h   	MF2, translation mode
+		    ABh 83h   	MF2, pass-through mode
+F3h nn      	set autorepeat rate/delay. nn=
+		    b7      unused
+		    b6..5   Repeat delay (00=250 msec ... 11=1000msec)
+		    b4..0   Repeat rate (00000=30x/sec ... 11111=2x/sec).
+F4h         	clears output buffer, enables keyboard
+F5h         	default disable: resets keyboard, suspends scanning
+F6h         	set default: resets keyboard
+F7h             make all keys typematic (auto-repeat)   [*]
+F8h             make all keys make-break                [*]
+F9h             make all keys make-only                 [*]
+FAh             make all keys typematic and make-break  [*]
+FBh nn          make one key typematic                  [*]
+FCh nn          make one key make-break                 [*]
+FDh nn          make one key make-only                  [*]
+                        [*] these commands may work only for
+                            scancode set 3; I'm not sure.
+FEh         	resend previous scan code
+FFh         	reset keyboard CPU, do power-on self-test, return
+		self-test result byte
+
+non-key status bytes
+--------------------
+00h    Key detection error or buffer full.
+AAh    Power-on/reset diagnostics successful.
+E0h    Prefix byte for "gray" keys.
+E1h    Prefix byte ???
+EEh    Sent in response to ECHO command.
+F0h    Prefix byte for break codes when using scancode sets 2 or 3.
+FAh    ACKknowledge; response to most commands.
+FCh    Diagnostics failed (MF keyboard).
+FDh    Diagnostics failed (AT keyboard).
+FEh    Last command was invalid or had parity error; resend it.
+FFh    Key detection error or buffer full.
+
+====================================================================
+SCANCODES FOR SCANCODE SET 1 (XT?)
+====================================================================
+Make codes are shown in hex.
+Break codes are make codes with high bit set (make code + 80h).
+"Gray" keys (not on original 84-key keyboard) prefix make/break with E0h.
+
+ ____    ___________________    ___________________    ___________________
+|Esc |  | F1 | F2 | F3 | F4 |  | F5 | F6 | F7 | F8 |  | F9 |F10 |F11 |F12 |
+|    |  |    |    |    |    |  |    |    |    |    |  |    |    |    |    |
+|01  |  |3B  |3C  |3D  |3E  |  |3F  |40  |41  |42  |  |43  |44  |57  |58  |
+|____|  |____|____|____|____|  |____|____|____|____|  |____|____|____|____|
+
+ __________________________________________________________________________
+| `~ | 1! | 2@ | 3# | 4$ | 5% | 6^ | 7& | 8* | 9( | 0) | -_ | =+ | \| | bs |
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|29  |02  |03  |04  |05  |06  |07  |08  |09  |0A  |0B  |0C  |0D  |2B  |0E  |
+|____|____|____|____|____|____|____|____|____|____|____|____|____|____|____|
+|Tab | Q  | W  | E  | R  | T  | Y  | U  | I  | O  | P  | [{ | ]} |         |
+|    |    |    |    |    |    |    |    |    |    |    |    |    |         |
+|0F  |10  |11  |12  |13  |14  |15  |16  |17  |18  |19  |1A  |1B  |         |
+|____|____|____|____|____|____|____|____|____|____|____|____|____|         |
+|Caps| A  | S  | D  | F  | G  | H  | J  | K  | L  | ;: | '" |     Enter    |
+|    |    |    |    |    |    |    |    |    |    |    |    |              |
+|3A  |1E  |1F  |20  |21  |22  |23  |24  |25  |26  |27  |28  |1C            |
+|____|____|____|____|____|____|____|____|____|____|____|____|______________|
+| L Shift | Z  | X  | C  | V  | B  | N  | M  | ,< | .> | /? |  R Shift     |
+|         |    |    |    |    |    |    |    |    |    |    |              |
+|2A       |2C  |2D  |2E  |2F  |30  |31  |32  |33  |34  |35  |36            |
+|_________|____|____|____|____|____|____|____|____|____|____|______________|
+|L Ctrl | L Win | L Alt |      Space       | R Alt | R Win | Menu  |R Ctrl |
+|       |       |       |                  |       |       |       |       |
+|1D     |E05B   |38     |39                |E038   |E05C   |E05D   |E01D   |
+|_______|_______|_______|__________________|_______|_______|_______|_______|
+
+
+note [*] for SysReq and ScrlLock below:
+	Key                     make            repeat          break
+	---------------         ------------    ------          --------
+	PrintScr/SysReq         E02AE037        E037            E0B7E0AA
+	Pause/Break             E11D45E19DC5    none            none
+
+ ____ ____ ____
+|Sys |Scrl|Brk |
+| Req|Lock|    |
+|[*] |46  |[*] |
+|____|____|____|
+
+ ____ ____ ____   ____ ____ ____ ____
+|Ins |Home|PgUp| |Num | /  | *  | -  |
+|    |    |    | |Lock|    |    |    |
+|E052|E047|E049| |45  |E035|37  |4A  |
+|____|____|____| |____|____|____|____|
+|Del |End |PgDn| | 7  | 8  | 9  |    |
+|    |    |    | |Home|(U) |PgUp|    |
+|E053|E04F|E051| |47  |48  |49  | +  |
+|____|____|____| |____|____|____|    |
+				 | 4  | 5  | 6  |    |
+				 |(L) |    |(R) |    |
+				 |4B  |4C  |4D  |4E  |
+      ____       |____|____|____|____|
+     |(U) |      | 1  | 2  | 3  |    |
+     |    |      |End |(D) |PgDn|    |
+     |E048|      |4F  |50  |51  |Ent |
+ ____|____|____  |____|____|____|    |
+|(L) |(D) |(R) | | 0       | .  |    |
+|    |    |    | |Ins      |Del |    |
+|E04B|E050|E04D| |52       |53  |E01C|
+|____|____|____| |_________|____|____|
+
+====================================================================
+SCANCODES FOR SCANCODE SET 2 (AT?)
+====================================================================
+Make codes are shown in hex.
+Break codes are F0h byte followed by make code.
+"Gray" keys (not on original 84-key keyboard):
+    make codes are prefixed with E0h byte,
+    break codes are E0h byte followed by F0h byte followed by make code.
+
+ ____    ___________________    ___________________    ___________________
+|Esc |  | F1 | F2 | F3 | F4 |  | F5 | F6 | F7 | F8 |  | F9 |F10 |F11 |F12 |
+|    |  |    |    |    |    |  |    |    |    |    |  |    |    |    |    |
+|76  |  |05  |06  |04  |0C  |  |03  |0B  |83  |0A  |  |01  |09  |78  |07  |
+|____|  |____|____|____|____|  |____|____|____|____|  |____|____|____|____|
+
+ __________________________________________________________________________
+| `~ | 1! | 2@ | 3# | 4$ | 5% | 6^ | 7& | 8* | 9( | 0) | -_ | =+ | \| | bs |
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|0E  |16  |1E  |26  |25  |2E  |36  |3D  |3E  |46  |45  |4E  |55  |5D  |66  |
+|____|____|____|____|____|____|____|____|____|____|____|____|____|____|____|
+|Tab | Q  | W  | E  | R  | T  | Y  | U  | I  | O  | P  | [{ | ]} |         |
+|    |    |    |    |    |    |    |    |    |    |    |    |    |         |
+|0D  |15  |1D  |24  |2D  |2C  |35  |3C  |43  |44  |4D  |54  |5B  |         |
+|____|____|____|____|____|____|____|____|____|____|____|____|____|         |
+|Caps| A  | S  | D  | F  | G  | H  | J  | K  | L  | ;: | '" |     Enter    |
+|    |    |    |    |    |    |    |    |    |    |    |    |              |
+|58  |1C  |1B  |23  |2B  |34  |33  |3B  |42  |4B  |4C  |52  |5A            |
+|____|____|____|____|____|____|____|____|____|____|____|____|______________|
+| L Shift | Z  | X  | C  | V  | B  | N  | M  | ,< | .> | /? |  R Shift     |
+|         |    |    |    |    |    |    |    |    |    |    |              |
+|12       |1A  |22  |21  |2A  |32  |31  |3A  |41  |49  |4A  |59            |
+|_________|____|____|____|____|____|____|____|____|____|____|______________|
+|L Ctrl | L Win | L Alt |      Space       | R Alt | R Win | Menu  |R Ctrl |
+|       |       |       |                  |       |       |       |       |
+|14     |[*]    |11     |29                |EO11   |[*]    |[*]    |E014   |
+|_______|_______|_______|__________________|_______|_______|_______|_______|
+
+Good grief. Note [*]:
+	Key                     make            repeat          break
+	---------------         ------------    ------          --------
+	L Win                   E012E01F        E01F            E0F01FE0F012
+	R Win                   E012E027        E027            E0F027E0F012
+	PrintScr/SysReq         E012E07C        E07C            E0F07CE0F012
+	Pause/Break             E11477E1F014F077(none)          (none)
+
+       (cursor keys)           (E012E0nn)      (E0nn)          (E0F0nnE0F012)
+	Ins                     E012E070        E070            E0F070E0F012
+	Home                    E012E06C        E06C            E0F06CE0F012
+	PgUp                    E012E07D        E07D            E0F07DE0F012
+	Del                     E012E071        E071            E0F071E0F012
+	End                     E012E069        E069            E0F069E0F012
+	PgDn                    E012E07A        E07A            E0F07AE0F012
+	(U)                     E012E075        E075            E0F075E0F012
+	(L)                     E012E06B        E06B            E0F06BE0F012
+	(D)                     E012E072        E072            E0F072E0F012
+	(R)                     E012E074        E074            E0F074E0F012
+
+ ____ ____ ____
+|Sys |Scrl|Brk |
+| Req|Lock|    |
+|[*] |7E  |[*] |
+|____|____|____|
+
+ ____ ____ ____   ____ ____ ____ ____
+|Ins |Home|PgUp| |Num | /  | *  | -  |
+|    |    |    | |Lock|    |    |    |
+|[*] |[*] |[*] | |77  |E04A|7C  |7B  |
+|____|____|____| |____|____|____|____|
+|Del |End |PgDn| | 7  | 8  | 9  |    |
+|    |    |    | |Home|(U) |PgUp|    |
+|[*] |[*] |[*] | |6C  |75  |7D  | +  |
+|____|____|____| |____|____|____|    |
+		 | 4  | 5  | 6  |    |
+		 |(L) |    |(R) |    |
+		 |6B  |73  |74  |79  |
+      ____       |____|____|____|____|
+     |(U) |      | 1  | 2  | 3  |    |
+     |    |      |End |(D) |PgDn|    |
+     |[*] |      |69  |72  |7A  |Ent |
+ ____|____|____  |____|____|____|    |
+|(L) |(D) |(R) | | 0       | .  |    |
+|    |    |    | |Ins      |Del |    |
+|[*] |[*] |[*] | |70       |71  |E05A|
+|____|____|____| |_________|____|____|
+
+====================================================================
+SCANCODES FOR SCANCODE SET 3
+====================================================================
+Make codes are shown in hex. All keys have one-byte make codes (Yay!).
+Break codes are F0h byte followed by make code.
+ ____    ___________________    ___________________    ___________________
+|Esc |  | F1 | F2 | F3 | F4 |  | F5 | F6 | F7 | F8 |  | F9 |F10 |F11 |F12 |
+|    |  |    |    |    |    |  |    |    |    |    |  |    |    |    |    |
+|08  |  |07  |0F  |17  |1F  |  |27  |2F  |37  |3F  |  |47  |4F  |56  |5E  |
+|____|  |____|____|____|____|  |____|____|____|____|  |____|____|____|____|
+
+ __________________________________________________________________________
+| `~ | 1! | 2@ | 3# | 4$ | 5% | 6^ | 7& | 8* | 9( | 0) | -_ | =+ | \| | bs |
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
+|0E  |16  |1E  |26  |25  |2E  |36  |3D  |3E  |46  |45  |4E  |55  |5C  |66  |
+|____|____|____|____|____|____|____|____|____|____|____|____|____|____|____|
+|Tab | Q  | W  | E  | R  | T  | Y  | U  | I  | O  | P  | [{ | ]} |         |
+|    |    |    |    |    |    |    |    |    |    |    |    |    |         |
+|0D  |15  |1D  |24  |2D  |2C  |35  |3C  |43  |44  |4D  |54  |5B  |         |
+|____|____|____|____|____|____|____|____|____|____|____|____|____|         |
+|Caps| A  | S  | D  | F  | G  | H  | J  | K  | L  | ;: | '" |     Enter    |
+|    |    |    |    |    |    |    |    |    |    |    |    |              |
+|14  |1C  |1B  |23  |2B  |34  |33  |3B  |42  |4B  |4C  |52  |5A            |
+|____|____|____|____|____|____|____|____|____|____|____|____|______________|
+| L Shift | Z  | X  | C  | V  | B  | N  | M  | ,< | .> | /? |  R Shift     |
+|         |    |    |    |    |    |    |    |    |    |    |              |
+|12       |1A  |22  |21  |2A  |32  |31  |3A  |41  |49  |4A  |59            |
+|_________|____|____|____|____|____|____|____|____|____|____|______________|
+|L Ctrl | L Win | L Alt |      Space       | R Alt | R Win | Menu  |R Ctrl |
+|       |       |       |                  |       |       |       |       |
+|11     |8B     |19     |29                |39     |8C     |8D     |58     |
+|_______|_______|_______|__________________|_______|_______|_______|_______|
+
+ ____ ____ ____
+|Sys |Scrl|Brk |
+| Req|Lock|    |
+|57  |5F  |62  |
+|____|____|____|
+
+ ____ ____ ____   ____ ____ ____ ____
+|Ins |Home|PgUp| |Num | /  | *  | -  |
+|    |    |    | |Lock|    |    |    |
+|67  |6E  |6F  | |76  |77  |7E  |84  |
+|____|____|____| |____|____|____|____|
+|Del |End |PgDn| | 7  | 8  | 9  |    |
+|    |    |    | |Home|(U) |PgUp|    |
+|64  |65  |6D  | |6C  |75  |7D  | +  |
+|____|____|____| |____|____|____|    |
+		 | 4  | 5  | 6  |    |
+		 |(L) |    |(R) |    |
+		 |6B  |73  |74  |7C  |
+      ____       |____|____|____|____|
+     |(U) |      | 1  | 2  | 3  |    |
+     |    |      |End |(D) |PgDn|    |
+     |63  |      |69  |72  |7A  |Ent |
+ ____|____|____  |____|____|____|    |
+|(L) |(D) |(R) | | 0       | .  |    |
+|    |    |    | |Ins      |Del |    |
+|61  |60  |6A  | |70       |71  |79  |
+|____|____|____| |_________|____|____|

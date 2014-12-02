@@ -1,0 +1,1 @@
+qemu.exe -L "bios" -boot d -m 8 -cdrom "kaos.iso" -localtime

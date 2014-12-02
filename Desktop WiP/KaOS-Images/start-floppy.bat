@@ -1,0 +1,1 @@
+qemu.exe -L "bios" -boot a -m 8 -fda "kaos.img" -localtime

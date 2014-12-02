@@ -1,0 +1,14 @@
+nasm -f bin boot.asm
+nasm -f bin comport.asm
+nasm -f bin debug.asm
+nasm -f bin debug2.asm
+nasm -f bin iboot.asm
+nasm -f bin -o KERNEL.COM kernel.asm
+nasm -f bin -o KEYB.COM keyb.asm
+nasm -f bin md5.asm
+nasm -f bin random.asm
+nasm -f bin Rechner.asm
+nasm -f bin SegOff.asm
+nasm -f bin -o TIMER.COM timer.asm
+nasm -f bin tone.asm
+nasm -f bin insert.ASM

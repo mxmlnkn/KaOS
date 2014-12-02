@@ -1,0 +1,2046 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+
+
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+  
+  <meta name="ProgId" content="Word.Document">
+
+
+  
+  <meta name="Generator" content="Microsoft Word 9">
+
+
+  
+  <meta name="Originator" content="Microsoft Word 9">
+
+
+  
+  <link rel="File-List" href="./03F803FF-Dateien/filelist.xml">
+
+
+  
+  <link rel="Edit-Time-Data" href="./03F803FF-Dateien/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+
+
+
+
+  
+
+  
+  <title>PORT 03F8-03FF - Serial port (8250,8250A,8251,16450,16550,16550A,etc</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Maximilian</o:LastAuthor>
+  <o:Revision>9</o:Revision>
+  <o:Created>2006-08-03T22:34:00Z</o:Created>
+  <o:LastSaved>2006-08-04T10:12:00Z</o:LastSaved>
+  <o:Pages>7</o:Pages>
+  <o:Words>2256</o:Words>
+  <o:Characters>12864</o:Characters>
+  <o:Lines>107</o:Lines>
+  <o:Paragraphs>25</o:Paragraphs>
+  <o:CharactersWithSpaces>15797</o:CharactersWithSpaces>
+  <o:Version>9.2812</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>21</w:HyphenationZone>
+ </w:WordDocument>
+</xml><![endif]-->
+  <style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-alt:"\FF2D\FF33 \660E\671D";
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:647 134676480 16 0 131231 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129023 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:647 134676480 16 0 131231 0;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129023 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	color:windowtext;}
+p
+	{margin-right:0cm;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial Unicode MS";
+	color:black;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 57.6pt 2.0cm 57.6pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+  </style><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1030">
+  <o:colormenu v:ext="edit" fillcolor="#969696"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+
+<body style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);" alink="#33cc00" lang="DE" link="#3333ff" vlink="#ff0000">
+
+
+
+<div style="color: rgb(255, 255, 255);" class="Section1">
+
+<span style="font-family: Times New Roman,Times,serif;">PORT 03F8-03FF - Serial port
+(8250,8250A,8251,16450,16550,16550A,etc.) COM1</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">chips
+uebersicht:</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;8250:</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; original PC, laeuft mit 56Kbd, but
+mostly runs</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; only 9600Bd, kein scratchregister,
+bug: manchmal werden</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; grundlos Ints gestartet</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;8250A, 16450, 16C451:</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ATs, meisten chips laufen mit 115Kbd</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;8250B:</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PC,XT,AT,
+pseudo bug: shots one causeless int for</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; compatibility with 8250, laeuft mit 56KBd</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;16550, 16550N, 16550V:</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; early
+PS/2, FIFO bugs</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;16550A,16550AF,16550AFN,16550C,16C551,16C552:</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PS/2,
+FIFO ok</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;82510:</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; laptops
+&amp; industrie, multi emulation mode</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (default=16450),
+special-FIFO.</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;8251:</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; completely
+different synchronous SIO chip, not compatible!</span><o:p style="font-family: Times New Roman,Times,serif;"></o:p><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">************************************************************************<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Schnittstelle<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>Basisadresse<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> IRQ <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">COM1<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>3F8h<span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>IRQ4<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">COM2 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>2F8h<span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>IRQ3<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">COM3 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>3E8h<span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>IRQ4<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">COM4 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>2E8h<span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>IRQ3<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Die Funktion
+der Schnittstelle wird vollstaendig ueber 10 Register des<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">COM-Ports
+gesteuert. Da nur bis zu acht Adressen zur Verfuegung stehen,<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">erfolgt
+eine interne Umschaltung durch das DLAB-Bit (Bit 7 im Leitungs-<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Steuerregister).
+Die Adressen der einzelnen Register sind hier mit ihrem<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Offset,
+d.h. mit ihrem Abstand zur Basisadresse angegeben. <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Offset <span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>DLAB<span style="">&nbsp; </span>Schreiben<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Lesen<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">0 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>Sende-Haltegergister<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Empfangs-Haltegegister<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">0 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>Baudratenregister
+(Lowbyte)<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>-<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">1 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>Interrupt-Freigaberegister<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>-<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">1 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>Baudratenregister
+(Highbyte) <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>-<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">2 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0 <span style="">&nbsp;&nbsp;&nbsp; </span>FIFO-Steuerregister<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Interrupt-Erkennungsregister <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">3 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0 <span style="">&nbsp;&nbsp;&nbsp; </span>Leitungs-Steuerregister<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>-<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">4 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>Modem-
+Steuerregister<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>-<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">5 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>-<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Leitungs-Statusregister<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">6 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>-<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Modem-Statusregister <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">7 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>Scratchpad-Register
+(nur 16450)<span style="">&nbsp;&nbsp;&nbsp; </span>Scratchpad-Register (nur
+16450)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">************************************************************************<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Vor
+einer Datenuebertragung muss der UART zunaechst initialisiert werden,<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">indem
+die einzelnen Steuerregister entsprechend den gewuenschten <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">uebertragungsparametern
+programmiert werden. Die eigentliche serielle<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">uebertragung
+erfolgt meist in kleinen Bloecken von acht Bits, also als<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">einzelne
+Bytes. Um ein Byte zu senden, schreibt man es in das Sende-Halteregister:<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">(Offset=0,
+schreiben)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">D7<span style="">&nbsp;&nbsp;&nbsp; </span>D6<span style="">&nbsp;&nbsp;&nbsp; </span>D5<span style="">&nbsp;&nbsp;&nbsp; </span>D4<span style="">&nbsp;&nbsp;&nbsp; </span>D3<span style="">&nbsp;&nbsp;&nbsp; </span>D2<span style="">&nbsp;&nbsp;&nbsp; </span>D1<span style="">&nbsp;&nbsp;&nbsp; </span>D0<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Sende-Halteregister(transmitter
+holding register (THR)) enthaelt das<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">zu
+sendende Zeichen.Bit 0 wird zuerst gesendet.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">(Offset=0,
+lesen)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">D7<span style="">&nbsp;&nbsp;&nbsp; </span>D6<span style="">&nbsp;&nbsp;&nbsp; </span>D5<span style="">&nbsp;&nbsp;&nbsp; </span>D4<span style="">&nbsp;&nbsp;&nbsp; </span>D3<span style="">&nbsp;&nbsp;&nbsp; </span>D2<span style="">&nbsp;&nbsp;&nbsp; </span>D1<span style="">&nbsp;&nbsp;&nbsp; </span>D0<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Empfangs-Halteregister(receiver
+buffer register (RBR)) enthaelt das<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">zu
+empfangende Zeichen.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">************************************************************************<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Fuer
+die uebertragung mu&szlig; man eine uebertragungsgeschwindigkeit waehlen,<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">die in
+Bits pro Sekunde (Baud) angegeben wird. Bei 1200 Baud werden<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">zusammen
+mit je einem Startbit und einem Stopbit in einer Sekunde bis zu<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">120
+Bytes uebertragen. Der UART 8250 verwendet einen Quarz mit 1,8432 MHz.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Diese
+Frequenz wird intern durch einen einstellbaren Teilerfaktor zur<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">16-fachen
+Baudrate geteilt. Der erforderliche Teilerfaktor berechnet sich<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">also
+zu: Teilerfaktor = 1843200 /(16 x Baudrate ) = 115200 / Baudrate<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">(Offset=0,
+DLAB=1)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Baudratenregister,
+Lowbyte<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">D7<span style="">&nbsp;&nbsp;&nbsp; </span>D6<span style="">&nbsp;&nbsp;&nbsp; </span>D5<span style="">&nbsp;&nbsp;&nbsp; </span>D4<span style="">&nbsp;&nbsp;&nbsp; </span>D3<span style="">&nbsp;&nbsp;&nbsp; </span>D2<span style="">&nbsp;&nbsp;&nbsp; </span>D1<span style="">&nbsp;&nbsp;&nbsp; </span>D0<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">(Offset=1,
+DLAB=1) <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Baudratenregister,
+Highbyte<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">D15<span style="">&nbsp;&nbsp; </span>D14<span style="">&nbsp;&nbsp; </span>D13<span style="">&nbsp;&nbsp; </span>D12<span style="">&nbsp;&nbsp; </span>D11<span style="">&nbsp;&nbsp; </span>D10<span style="">&nbsp;&nbsp; </span>D9<span style="">&nbsp;&nbsp;&nbsp; </span>D8<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Die
+folgende Tabelle zeigt die Einstellungen fuer die wichtigsten Baudraten:<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Baudrate<span style="">&nbsp;&nbsp;&nbsp; </span>Teilerfaktor<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Highbyte<span style="">&nbsp;&nbsp;&nbsp; </span>Lowbyte<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">50<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>2304<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>09h
+00h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">75<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1536<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>06h
+00h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">110<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1047<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>04h
+17h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">134,5<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>857<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>03h
+59h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">150<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>768<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>03h
+00h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">300<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>384<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>01h
+80h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">600<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>192<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>00h
+C0h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">1200<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>96<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>00h
+60h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">1800<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>64<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>00h
+40h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">2000<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>58<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>00h
+3Ah<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">2400<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>48<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>00h
+30h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">3600<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>32<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>00h
+20h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">4800<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>24<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>00h
+18h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">7200<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>16<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>00h
+10h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">9600<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>12<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>00h
+0Ch<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">19200<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>6<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>00h
+06h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">38400<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>3<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>00h
+03h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">57600<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>2<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>00h
+02h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">115200<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>00h
+01h<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">************************************************************************<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Von der
+seriellen Schnittstelle koennen Interrupts ausgeloest werden.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Dazu
+mu&szlig; das Interrupt-Freigaberegister programmiert werden. Um einen<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">oder
+mehrere Interrupts zu aktivieren, mu&szlig; das entsprechende Bit gesetzt<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">werden.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">(Offset=1,
+DLAB=0)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Interrupt-Freigaberegister
+- interrupt enable register (IER)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">7<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>6<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>5<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>4<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>3<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>2<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>SINP<span style="">&nbsp; </span>ERBK<span style="">&nbsp; </span>TBE<span style="">&nbsp;&nbsp; </span>RxRD<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Interruptfreigabe
+fuer:<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">SINP: Zustansaenderung
+einer Handshake-Leitung <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">ERBK:
+Fehler oder BREAK erkannt <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">TBE:
+Sende-Haltepuffer ist leer <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">RxRD:
+Ein Zeichen wurde empfangen<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Ein
+Fehler kann beim Empfang eines Zeichens erkannt werden, wenn z.B.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">die
+vereinbarte Zeichenlaenge oder die Anzahl der Stopbits nicht<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">eingehalten
+wird. Liegt am Eingang RXD ein anhaltender High-Pegel, dann<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">spricht
+man von einem BREAK-Zustand. Dieser Zustand wuerde nach Ablauf<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">der
+normalen uebertragungszeit der vereinbarten Datenbits wie ein<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Empfangsfehler
+gewertet.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">************************************************************************<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Um
+Interrupts auszuloesen, muessen noch zwei weitere Bedingungen erfuellt<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">sein:
+Zum einen mu&szlig; der Interruptcontroller entsprechend programmiert<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>sein, zum anderen mu&szlig; die Leitung OUT2
+(Bit 3 im Modem-Steuerregister)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>gesetzt sein. <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Wenn
+einer von mehreren moeglichen Interrupts aufgetreten ist, kann man<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">im
+Interrupt-Erkennungsregister die Quelle erfahren:<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">(Offset=2,
+lesen)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Interrupt-Erkennungsregister
+- interrupt identification register (IIR)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">7<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>6<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>5<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>4<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>3<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>2<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">FON<span style="">&nbsp;&nbsp; </span>FON2<span style="">&nbsp; </span>0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>ID2<span style="">&nbsp;&nbsp; </span>ID1<span style="">&nbsp;&nbsp; </span>ID0<span style="">&nbsp;&nbsp; </span>PND<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">FON:
+FIFO eingeschaltet <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">FON2:
+FIFO eingeschaltet (nur 16550A) <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">ID2:
+Identifizierungsbit: Timeout <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">ID1,
+ID0: Identifizierungsbits: <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">00:
+Zustansaenderung einer Handshake-Leitung <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">01: Sende-Haltepuffer
+ist leer <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">10: Ein
+Zeichen wurde empfangen <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">11:
+Fehler oder BREAK-Bedingung erkannt <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">PND:
+Interrupt ist anhaengig<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Ein
+abhaengiger Interrupt nach einer Zustandsaenderung einer<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Handshakeleitung
+wird durch das Lesen des Modem-Statusregisters wieder<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">geloescht.
+Ebenso loescht ein Lesen des Empfangs-Halteregisters<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">einen
+Empfangs-Interrupt und das Lesen des Leitungs-Statusregisters<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">einen
+Fehler- oder BREAK-Interrupt. Der Interrupt durch ein leeres<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Sende-Halteregister
+kann entweder durch das Lesen des Interrupt-<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Erkennungsregisters
+oder durch Schreiben in das Sende-Halteregister<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">geloescht
+werden.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">************************************************************************<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Der
+FIFO-Speicher im 16550<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Der
+UART 8250 und sein Nachfolgetyp 16450 verarbeiten jeweils nur ein<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Zeichen.
+Wird ein neues Zeichen empfangen, bevor das alte ausgelesen wurde,<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">kommt
+es zum Datenverlust. Um auch bei hoeheren uebertragungsgeschw-<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">indigkeiten
+andere Aufgaben parallel durchfuehren zu koennen, setzt man<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">den
+neueren 16550 mit zwei 16-Byte Zwischenspeichern fuer die Sende- und<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Empfangsrichtung
+ein. Die zusaetzlichen Speicher sind als sog. FIFO-<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">(first
+in first out) Speicher ausgelegt, so da&szlig; die ausgelesenen Zeichen<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">immer
+in der Reihenfolge des Empfangs erscheinen.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Der
+FIFO-Speicher ist nach einem Reset zunaechst inaktiv und mu&szlig; bei<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Bedarf
+durch das FIFO-Controllregister eingeschaltet werden. Dieses<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Register
+ist nur in Schreibrichtung unter der Offsetadresse 2 zugaenglich,<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">beim Auslesen
+befindet sich hier das Interrupt-Erkennungregister, das<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">ebenfalls
+eine erweiterte Funktion hat:<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">(Offset=2,
+schreiben)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">FIFO-Steuerregister
+- FIFO control register (FCR)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">7<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>6<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>5<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>4<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>3<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>2<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">TL1<span style="">&nbsp;&nbsp; </span>TL0<span style="">&nbsp;&nbsp; </span>0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>FRT<span style="">&nbsp;&nbsp; </span>FRR<span style="">&nbsp;&nbsp; </span>FEN<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">TL1, TL0: Triggerlevel, Interrupt nach: <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;</span>00: 1 Byte <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;</span>01: 4 Bytes <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;</span>10: 8 Bytes <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;</span>11: 14 Bytes <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">FRT: FIFO-Reset fuer Sender <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">FRR:
+FIFO-Reset fuer Empfaenger <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">FEN:
+FIFO einschalten<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Will
+man ohne FIFO arbeiten und eine Kompatibilitaet zum 8050 erzwingen,<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">dann
+sollte der Wert 6 in das Register geschrieben werden. Damit erfolgt<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">zugleich
+ein Reset und ein Ausschalten des FIFO. Ob der FIFO-Modus<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">eingeschaltet
+wurde, lae&szlig;t sich an einem zusaetzlichen Statusbit des<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Interrupt-Erkennungsregisters
+ablesen.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">************************************************************************<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Das
+Leitungs-Steuerregister braucht im Normalfall nur zur Initialisierung<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">der
+seriellen Schnittstelle beschrieben werden. Es enthaelt acht<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Steuerbits
+zur Festlegung der uebertragungsparameter:<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">(Offset=3,
+DLAB=0)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Leitungs-Steuerregister
+- Line Control Register (LCR)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">7<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>6<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>5<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>4<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>3<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>2<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">DLAB<span style="">&nbsp; </span>BRK<span style="">&nbsp;&nbsp; </span>PAR2 PAR1 PAR0<span style="">&nbsp;&nbsp;&nbsp; </span>STOP<span style="">&nbsp; </span>DAB1<span style="">&nbsp; </span>DAB0<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">DLAB:
+Zugriff auf das Baudratenregister freigeben <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">BRK:
+BREAK-Zustand an TXD setzen <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">PAR2...PAR0:
+Festlegung des Paritaetsbits <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;</span>000: keins <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;</span>001: ungerade <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;</span>011: gerade <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;</span>101: mark <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;</span>111: space <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">STOP:
+Festlegung von zwei Stopbits <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">DAB1...DAB0:
+Anzahl der Datenbits <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;</span>00: 5 Bits <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;</span>01: 6 Bits <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;</span>10: 7 Bits <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;</span>11: 8 Bits<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;</span><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Das
+DLAB-Bits bewirkt eine interne Umschaltung der Register mit den<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Offsetadressen
+0 und 1. Es mu&szlig; gesetzt werden, um die Baudrate<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">einzustellen,
+im normalen Betrieb mu&szlig; es dagegen geloescht sein. Das<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">BRK-Bit
+kann verwendet werden, um den Zustand der Leitung TXD als Ausgang<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">voellig
+unabhaengig von der normalen Funktion des UARTs zu steuern.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Die
+uebrigen Bits des Registers legen fuer den Sender und den Empfaenger<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">des
+UARTs ein eventuelles Paritaetsbit, die Anzahl der Stopbits und die<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Anzahl
+der Datenbits fest. Ein uebliches Format ist z.B. 8 Datenbits,<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">kein Paritaetsbit
+und ein Stopbit. Fuer diese Einstellung muessen nur die<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">beiden
+Bits DAB1 und DAB0 gesetzt werden (Registerinhalt = 3). Zusammen<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">mit dem
+Startbit werden dann insgesamt 10 Bits uebertragen, so da&szlig; z.B.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">bei
+einer uebertragungsgeschwindigkeit von 19200 Baud genau 1920 Zeichen<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">pro
+Sekunde uebertragen werden koennen.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">************************************************************************<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Das
+Leitungs-Steuerregister dient im wesentlichen zum Steuern der<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">zusaetzlichen
+Ausgaenge des UART. Waehrend DTR und RTS an den<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Schnittstellenstecker
+gefuehrt werden, sind OUT2 und OUT1 als zusaetzliche<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Mehrzweckausgaenge
+beim PC nicht von au&szlig;en zugaenglich. OUT2 erfuellt<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">aber
+eine wichtige Funktion beim Aktivieren von Interrupts. Diese Leitung<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">mu&szlig;
+naemlich gesetzt werden, um ueberhaupt einen Interrupt weiterzuleiten.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">(Offset=4)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Modem-Steuerregister
+- Modem Control Register (MCR)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">7<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>6<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>5<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>4<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>3<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>2<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>LOOP<span style="">&nbsp; </span>OUT2<span style="">&nbsp; </span>OUT1<span style="">&nbsp; </span>RTS<span style="">&nbsp;&nbsp; </span>DTR<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">LOOP:
+Interne Rueckkopplung zu Testzwecken <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">OUT2:
+Leitung OUT2 setzen, um Interrupts zu ermoeglichen <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">OUT1:
+interne Leitung OUT1 setzen <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">RTS:
+Leitung RTS setzen (request-to-send)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">DTR:
+Leitung DTR setzen (data-terminal-ready)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Das
+LOOP-Bit kann sinnvoll eingesetzt werden, um eigene Programme zu<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">testen.
+Die ausgesendeten Zeichen werden empfangen, ohne da&szlig; eine externe<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Verbindung
+zwischen TXD und RXD hergestellt werden mu&szlig;.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">************************************************************************<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Das
+Leitungs-Statusregister enthaelt sieben Statusbits, ueber die sich<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">aktuelle
+Zustaende des seriellen Senders und des seriellen Empfaengers<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">auslesen
+lassen.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">(Offset=5)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Leitungs-Statusregister
+- Line Status Register (LSR)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">7<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>6<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>5<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>4<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>3<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>2<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span> 0<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">0<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>TXE<span style="">&nbsp;&nbsp; </span>TBE<span style="">&nbsp;&nbsp; </span>BREK<span style="">&nbsp; </span>FRMF<span style="">&nbsp; </span>PARF<span style="">&nbsp; </span>ueBLF
+RXRD<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">TXE:
+Letztes Zeichen ist vollstaendig ausgesendet <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">TBE: Sende-Halteregister
+ist leer <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">BREK:
+BREAK-Zustand an RXD erkannt <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">FRMF:
+Format-Fehler erkannt <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">RARF:
+Paritaetsfehler erkannt <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">ueBLF:
+ueberlauffehler erkannt <o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">RXRD:
+Ein Zeichen wurde empfangen<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Sobald
+das TBE-Bit gesetzt ist, darf ein neues Zeichen in das<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Sende-Haltegegister
+geschrieben werden. Dieses Zeichen wird aber erst<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">dann in
+das Schieberegister des seriellen Senders uebernommen, wenn kein<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">anderes
+Zeichen mehr bearbeitet werden mu&szlig;. Sobald das zuletzt in das<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Sende-Halteregister
+geschriebene Zeichen in das Schieberegister uebernommen<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">wird,
+setzt der UART sein TBE-Bit. Das TXE-Bit wird dagegen erst dann<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">gesetzt,
+wenn das letzte Zeichen vollstaendig uebertragen wurde.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Fuer
+die Empfangsrichtung zeigt das RXRD-Bit, da&szlig; ein Zeichen zur<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Verfuegung
+steht. Es mu&szlig; rechtzeitig aus dem Empfangs-Halteregister<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">ausgelesen
+werden, um nicht von einem folgenden Zeichen ueberschrieben<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">zu
+werden. Im letzteren Fall wuerde durch das ueBLF-Bit ein ueberlauf<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">angezeigt.
+ueberlaeufe lassen sich verhindern, indem entweder durch ein<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">genuegend
+schnelles "Polling" das RXRD-Bit laufend beobachtet wird, oder<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">indem
+eine Interruptroutine benutzt wird, die ein ankommendes Zeichen<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">verarbeitet.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">************************************************************************<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Der
+Zustand der Eingaenge DCD, RI, DSR und CTS kann ueber das Modem-<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Statusregister
+gelesen werden. Waehrend die oberen vier Bits den Zustand<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">der
+vier Leitungen direkt widerspiegeln, zeigen die unteren vier Bits<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">an, ob
+seit dem letzten Lesezugriff auf das Modem-Statusregister eine<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Zustandsaenderung
+an einer Leitung aufgetreten ist.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">(Offset=6)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Modem-Statusregister
+- Modem Status Register (MSR)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">7<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>6<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>5<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>4<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>3<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>2<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">DCD<span style="">&nbsp;&nbsp; </span>RI<span style="">&nbsp;&nbsp;&nbsp; </span>DSR<span style="">&nbsp;&nbsp; </span>CTS <span style="">&nbsp; </span>DDCD<span style="">&nbsp; </span>DRI<span style="">&nbsp;&nbsp; </span>DDSR<span style="">&nbsp; </span>DCTS<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">DCD:
+Leitung DCD ist gesetzt (data carrier detect)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">RI:
+Leitung RI ist gesetzt (ring indicator)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">DSR:
+Leitung DSR ist gesetzt (data set ready)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">CTS:
+Leitung CTS ist gesetzt (clear to send)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">DDCD:
+Zustandsaenderung an DCD (delta data carrier detect)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">DRI:
+Zustandsaenderung an RI (trailing edge ring indicator)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">DDSR:
+Zustandsaenderung an DSR (delta data set ready)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">DCTS:
+Zustandsaenderung an CTS (delta clear to send)<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;">Notes:<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>bits
+0-3 are reset when the CPU reads the MSR<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>bit 4
+is the Modem Control Register RTS during loopback test<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>bit 5
+is the Modem Control Register DTR during loopback test<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>bit 6
+is the Modem Control Register OUT1 during loopback test<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>bit 7
+is the Modem Control Register OUT2 during loopback test<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:62.25pt;
+ height:48.75pt'>
+ <v:imagedata src="./03F803FF-Dateien/image001.gif" o:title="image002"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="03F803FF-Dateien/image001.gif" v:shapes="_x0000_i1025" height="65" width="83"><!--[endif]--><span style="">&nbsp;</span>(To Computer).<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>9
+PIN D-SUB FEMALE to Computer.<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Name<span style="">&nbsp; </span>Pin<span style="">&nbsp;&nbsp; </span>Pin<span style="">&nbsp;&nbsp; </span>Name<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>DCD<span style="">&nbsp;&nbsp; </span>1<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>6<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>DSR<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>RXD<span style="">&nbsp;&nbsp; </span>2<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>7<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>RTS<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>TXD<span style="">&nbsp;&nbsp; </span>3<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>8<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>CTS<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>DTR<span style="">&nbsp;&nbsp; </span>4<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>9<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>RI<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>GND<span style="">&nbsp;&nbsp; </span>5<o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-family: Times New Roman,Times,serif;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p>
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-size: 10pt; font-family: Arial;" lang="IT"><!--[if !supportEmptyParas]--><span style="font-family: Times New Roman,Times,serif;">&nbsp;</span><!--[endif]--><o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="IT">Sourcecode: </span><span style="font-size: 10pt; font-family: Arial;"><a href="03F803FF.asm"><span style="" lang="IT">03F803FF.asm</span></a></span><span style="font-size: 10pt; font-family: Arial;" lang="IT"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Programm:
+</span><span style="font-size: 10pt; font-family: Arial;"><a href="03F803FF.com"><span style="" lang="IT">03F803FF.com</span></a></span><span style="font-size: 10pt; font-family: Arial;" lang="IT"><o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="IT"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="IT">Der UART-Microprozessor (8250
+u.a.) <o:p></o:p></span>
+
+<br>
+
+<span style="font-family: Arial;">UART
+steht fuer Universal Asynchronous Receiver / Transmitter. Die meisten Karten
+werden den<o:p></o:p></span>
+
+<br>
+
+<span style="font-family: Arial;">UART
+in anderen Chips integriert haben, sie steuern sie deinen parallel port, games
+port, Modem<o:p></o:p></span>
+
+<br>
+
+<span style="font-family: Arial;">u.a.
+und sind normalerweise auf einem Geraete befestigt. Die 8250-Serien, welche
+auch die 16450,<o:p></o:p></span>
+
+<br>
+
+<span style="font-family: Arial;">16550
+,16650 &amp; 16750 UART&rsquo;s beinhaltet, sind die haeufigsten zu findenden Typen
+in deinen PC.<o:p></o:p></span>
+
+<br>
+
+<span style="font-family: Arial;"><span style="">&nbsp;</span><o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;"><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ alt="" style='width:390pt;height:219.75pt'>
+ <v:imagedata src="./03F803FF-Dateien/image002.gif" o:href="file:///F:/Assis/Tutoriale/Hardware/beyondlogic/serial/uart.gif"/>
+</v:shape><![endif]--><!--[if !vml]--><img src="03F803FF-Dateien/image002.gif" v:shapes="_x0000_i1026" border="0" height="293" width="520"><!--[endif]--></span><span style="font-size: 10pt; font-family: Arial;" lang="EN-GB"><br style="">
+
+
+<!--[if !supportLineBreakNewLine]--><br style="">
+
+
+<!--[endif]--><o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;">Pin<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Name<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Beschreibung<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;">1<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>D0<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Data
+Bus<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">2<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>D1 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Data
+Bus<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">3<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>D2 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Data
+Bus<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">4<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>D3 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Data
+Bus<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">5<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>D4 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Data
+Bus<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">6<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>D5 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Data
+Bus<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">7<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>D6 <span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Data
+Bus<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">8<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>D7<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Data
+Bus<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">9<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>RCLK<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Receiver
+Clock Input. </span><span style="font-size: 10pt; font-family: Arial;">Die Frequenz sollte die Baud Rate*16 betragen<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Times New Roman,Times,serif;" lang="EN-GB">10<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>RD<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Receive
+Data<o:p></o:p></span><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-size: 10pt; font-family: Times New Roman,Times,serif;" lang="EN-GB">11<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>TD<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Transmit
+Data<o:p></o:p></span><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-size: 10pt; font-family: Times New Roman,Times,serif;" lang="EN-GB">12<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>CS0<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Chip
+Select 0 - Active High<o:p></o:p></span><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-size: 10pt; font-family: Times New Roman,Times,serif;" lang="EN-GB">13<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>CS1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chip
+Select 1 - Active High<o:p></o:p></span><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-size: 10pt; font-family: Times New Roman,Times,serif;" lang="EN-GB">14<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nCS2<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Chip
+Select 2 - Active Low<o:p></o:p></span><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-size: 10pt; font-family: Times New Roman,Times,serif;" lang="EN-GB">15<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nBAUDOUT<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Baud
+Output - Output from Programmable Baud Rate Generator. Frequenz = (Baud Rate*16)<o:p></o:p></span><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-size: 10pt; font-family: Times New Roman,Times,serif;" lang="EN-GB">16<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>XIN<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>External
+Crystal Input - Used for Baud Rate Generator Oscillator<o:p></o:p></span><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-size: 10pt; font-family: Times New Roman,Times,serif;" lang="EN-GB">17<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>XOUT<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>External
+Crystal Output</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-size: 10pt; font-family: Times New Roman,Times,serif;" lang="EN-GB">18<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nWR<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Write
+Line - Inverted</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-size: 10pt; font-family: Times New Roman,Times,serif;" lang="EN-GB">19<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>WR<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Write
+Line - Not Inverted</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-size: 10pt; font-family: Times New Roman,Times,serif;" lang="EN-GB">20<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>VSS<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Connected
+to Common Ground</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-size: 10pt; font-family: Times New Roman,Times,serif;" lang="EN-GB">21<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>RD<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Read
+Line - Inverted</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-size: 10pt; font-family: Times New Roman,Times,serif;" lang="EN-GB">22<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nRD<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Read
+Line - Not Inverted</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-size: 10pt; font-family: Times New Roman,Times,serif;">23<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>DDIS<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Driver
+Disable. This pin goes low wenn die CPU vom UART liest. Kann mit
+dem Bus Transceiver verbunden werden falls viele Daten<o:p></o:p></span><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br style="font-family: Times New Roman,Times,serif;">
+
+<span style="font-size: 10pt; font-family: Times New Roman,Times,serif;" lang="EN-GB">im data bus lieen.<o:p></o:p></span><span style="font-family: Times New Roman,Times,serif;">
+
+</span><br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">24<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nTXRDY<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Transmit
+Ready<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">25<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nADS<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Address
+Strobe. </span><span style="font-size: 10pt; font-family: Arial;">Wird benutzt wenn die Signale beim Lesen oder<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>schreiben
+nicht gleichmaessig sind.<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">26<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A2<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Address
+Bit 2<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">27<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A1<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Address
+Bit 1<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">28<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A0<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Address
+Bit 0<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">29<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nRXRDY<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Receive
+Ready<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">30<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>INTR<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Interrupt
+Output<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">31<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nOUT2<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>User
+Output 2<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">32<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nRTS<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Request
+to Send<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">33<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nDTR<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Data
+Terminal Ready<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">34<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nOUT1<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>User
+Output 1<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">35<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>MR<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Master
+Reset<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">36<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nCTS<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Clear
+To Send<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;" lang="EN-GB">37<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nDSR<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Data
+Set Ready<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;">38<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nDCD<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Data Carrier Detect<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;">39<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>nRI<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Ring Indicator<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;">40<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>VDD<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>+ 5 Volts<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;">Wer mehr Informationen braucht muss sich mal die
+daten-blaeter von der<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;"><a href="http://www.natsemi.com/">National Semiconductors
+Site</a> oder von <a href="http://www.ti.com/">Texas Instruments</a> downloaden
+oder sich auf<o:p></o:p></span>
+
+<br>
+
+<span style="font-size: 10pt; font-family: Arial;">der Seite von <a href="http://ww.beyondlogic.org/serial/serial.htm">Beyondlogic</a> umsehen.</span>
+
+<br>
+
+<span style=""><!--[if !supportEmptyParas]-->&nbsp;PORT 03F8-03FF - Serial port (8250,8250A,8251,16450,16550,16550A,etc.) COM1Range:&nbsp;&nbsp;&nbsp; PORT 02E8h-02EFh (COM2), PORT 02F8h-02FFh (typical non-PS/2 COM3), and&nbsp;&nbsp;&nbsp; &nbsp; PORT 03E8h-03EFh (typical non-PS/2 COM4)Note:&nbsp;&nbsp;&nbsp; chips overview:&nbsp;&nbsp;&nbsp; &nbsp;8250&nbsp; original PC, specified up to 56Kbd, but mostly runs&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; only 9600Bd, no scratchregister, bug: sometimes shots&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ints without reasons&nbsp;&nbsp;&nbsp; &nbsp;8250A, 16450, 16C451: ATs, most chips run up to 115KBd,&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no bug: shots no causeless ints&nbsp;&nbsp;&nbsp; &nbsp;8250B: PC,XT,AT, pseudo bug: shots one causeless int for&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; compatibility with 8250, runs up to 56KBd&nbsp;&nbsp;&nbsp; &nbsp;16550, 16550N, 16550V: early PS/2, FIFO bugs&nbsp;&nbsp;&nbsp; &nbsp;16550A,16550AF,16550AFN,16550C,16C551,16C552: PS/2, FIFO ok&nbsp;&nbsp;&nbsp; &nbsp;82510: laptops &amp; industry, multi emulation mode&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; (default=16450), special-FIFO.&nbsp;&nbsp;&nbsp; &nbsp;8251: completely different synchronous SIO chip, not compatible!SeeAlso: INT 14/AH=00h"SERIAL"03F8&nbsp; -W&nbsp; serial port, transmitter holding register (THR), which contains the&nbsp;&nbsp;&nbsp; &nbsp; character to be sent. Bit 0 is sent first.&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; bit 7-0&nbsp;&nbsp;&nbsp; &nbsp; data bits when DLAB=0 (Divisor Latch Access Bit)03F8&nbsp; R-&nbsp; receiver buffer register (RBR), which contains the received&nbsp;&nbsp;&nbsp; &nbsp; character. Bit 0 is received first&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;bit 7-0&nbsp;&nbsp; data bits when DLAB=0 (Divisor Latch Access Bit)03F8&nbsp; RW&nbsp; divisor latch low byte (DLL) when DLAB=1 (see #P0876)03F9&nbsp; RW&nbsp; divisor latch high byte (DLM) when DLAB=1 (see #P0876)03F9&nbsp; RW&nbsp; interrupt enable register (IER) when DLAB=0 (see #P0877)03FA&nbsp; R-&nbsp; interrupt identification register (see #P0878)&nbsp;&nbsp;&nbsp; Information about a pending interrupt is stored here. When the ID&nbsp;&nbsp;&nbsp; &nbsp; register is addressed, thehighest priority interrupt is held, and&nbsp;&nbsp;&nbsp; &nbsp; no other interrupts are acknowledged until the CPU services that&nbsp;&nbsp;&nbsp; &nbsp; interrupt.03FA&nbsp; -W&nbsp; 16650 FIFO Control Register (FCR) (see #P0879)03FB&nbsp; RW&nbsp; line control register (LCR) (see #P0880)03FC&nbsp; RW&nbsp; modem control register (see #P0881)03FD&nbsp; R-&nbsp; line status register (LSR) (see #P0882)03FE&nbsp; R-&nbsp; modem status register (MSR) (see #P0883)03FF&nbsp; RW&nbsp; scratch register (SCR)&nbsp;&nbsp;&nbsp; (not used for serial I/O; available to any application using 16450,&nbsp;&nbsp;&nbsp; &nbsp; 16550) (not present on original 8250)(Table P0876)Values for serial port divisor latch registers:&nbsp;Some baudrates (using standard 1.8432 Mhz clock):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; baudrate&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; divisor&nbsp;&nbsp;&nbsp; &nbsp;DLM&nbsp; DLL&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 50&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 2304&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 09h 00h&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 75&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 1536&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 06h 00h&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 110&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 1047&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 04h 17h&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 134,5&nbsp;&nbsp;&nbsp; 857&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 03h 59h&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 150&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 768&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 03h 00h&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 300&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 384&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 01h 80h&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 600&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 192&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 00h C0h&nbsp;&nbsp;&nbsp; &nbsp; 1200&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 96&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 00h 60h&nbsp;&nbsp;&nbsp; &nbsp; 1800&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 64&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 00h 40h&nbsp;&nbsp;&nbsp; &nbsp; 2000&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 58&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 00h 3Ah&nbsp;&nbsp;&nbsp; &nbsp; 2400&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 48&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 00h 30h&nbsp;&nbsp;&nbsp; &nbsp; 3600&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 32&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 00h 20h&nbsp;&nbsp;&nbsp; &nbsp; 4800&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 24&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 00h 18h&nbsp;&nbsp;&nbsp; &nbsp; 7200&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 16&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 00h 10h&nbsp;&nbsp;&nbsp; &nbsp; 9600&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 12&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 00h 0Ch&nbsp;&nbsp;&nbsp;
+&nbsp;19200&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+6&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 00h 06h&nbsp;&nbsp;&nbsp;
+&nbsp;38400&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 00h 03h&nbsp;&nbsp;&nbsp;
+&nbsp;57600&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 00h 02h&nbsp;&nbsp;&nbsp; 115200&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 00h 01hNote:&nbsp;&nbsp;&nbsp; MIDI baudrate 32250Bd with 4Mhz quarz for c't MIDI interface&nbsp;&nbsp;&nbsp; &nbsp; following c't 01/1991:&nbsp;&nbsp; '14400'&nbsp;&nbsp;&nbsp; &nbsp; 00h 08hBitfields for serial port interrupt enable register (IER):Bit(s)&nbsp;&nbsp;&nbsp; Description&nbsp;&nbsp;&nbsp; (Table P0877)&nbsp;7-6&nbsp;&nbsp;&nbsp; reserved (0)&nbsp;5&nbsp;&nbsp;&nbsp; (82510) "timer"&nbsp;&nbsp;&nbsp; (other) reserved (0)&nbsp;4&nbsp;&nbsp;&nbsp; (82510) "transmit machine"&nbsp;&nbsp;&nbsp; (other) reserved (0)&nbsp;3&nbsp;&nbsp;&nbsp; modem-status interrupt enable&nbsp;2&nbsp;&nbsp;&nbsp; receiver-line-status interrupt enable&nbsp;1&nbsp;&nbsp;&nbsp; transmitter-holding-register empty interrupt enable&nbsp;0&nbsp;&nbsp;&nbsp; received-data-available interrupt enable&nbsp;&nbsp;&nbsp; &nbsp; (also 16550(A) timeout interrupt)Note:&nbsp;&nbsp;&nbsp; 16550(A) will interrupt with a timeout if data exists in the FIFO&nbsp;&nbsp;&nbsp; &nbsp; and isn't read within the time it takes to receive four bytes or if&nbsp;&nbsp;&nbsp; &nbsp; no data is received within the time it takes to receive four bytesSeeAlso: #P0878Bitfields for serial port interrupt identification register (IIR):Bit(s)&nbsp;&nbsp;&nbsp; Description&nbsp;&nbsp;&nbsp; (Table P0878)&nbsp;7-6&nbsp;&nbsp;&nbsp; =00&nbsp; reserved on 8250, 8251, 16450&nbsp;&nbsp;&nbsp; =01&nbsp; if FIFO queues enabled but unusable (16550 only)&nbsp;&nbsp;&nbsp; =11&nbsp; if FIFO queues are enabled (16550A only) (see also #P0879)&nbsp;6-5&nbsp;&nbsp;&nbsp; used by 82510 for bank select (00 = default bank0)&nbsp;5-4&nbsp;&nbsp;&nbsp; reserved (0)&nbsp;3-1&nbsp;&nbsp;&nbsp; identify pending interrupt with the highest priority&nbsp;&nbsp;&nbsp; 110&nbsp;&nbsp;&nbsp; (16550,82510) timeout interrupt pending&nbsp;&nbsp;&nbsp; 101&nbsp;&nbsp;&nbsp; (82510) timer interrupt (see #P0877)&nbsp;&nbsp;&nbsp; 100&nbsp;&nbsp;&nbsp; (82510) transmit machine (see #P0877)&nbsp;&nbsp;&nbsp; 011&nbsp;&nbsp;&nbsp; receiver line status interrupt. priority=highest&nbsp;&nbsp;&nbsp; 010&nbsp;&nbsp;&nbsp; received data available register interrupt. pr.=second&nbsp;&nbsp;&nbsp; 001&nbsp;&nbsp;&nbsp; transmitter holding register empty interrupt. pr.=third&nbsp;&nbsp;&nbsp; 000&nbsp;&nbsp;&nbsp; modem status interrupt. priority=fourth&nbsp;0&nbsp;&nbsp;&nbsp; =0 interrupt pending. contents of register can be used as a pointer&nbsp;&nbsp;&nbsp; &nbsp; to the appropriate interrupt service routine&nbsp;&nbsp;&nbsp; =1 no interrupt pendingNotes:&nbsp;&nbsp;&nbsp; interrupt pending flag uses reverse logic, 0=pending, 1=none&nbsp;&nbsp;&nbsp; interrupt will occur if any of the line status bits are set&nbsp;&nbsp;&nbsp; THRE bit is set when THRE register is emptied into the TSRSeeAlso: #P0877Bitfields for serial port FIFO control register (FCR):Bit(s)&nbsp;&nbsp;&nbsp; Description&nbsp;&nbsp;&nbsp; (Table P0879)&nbsp;7-6&nbsp;&nbsp;&nbsp; received data available interrupt trigger level (16550)&nbsp;&nbsp;&nbsp; 00&nbsp; 1 byte&nbsp;&nbsp;&nbsp; 01&nbsp; 4 bytes&nbsp;&nbsp;&nbsp; 10&nbsp; 8 bytes&nbsp;&nbsp;&nbsp; 11 14 bytes&nbsp;6-5&nbsp;&nbsp;&nbsp; =00&nbsp; (used to enable 4 byte Rx/Tx FIFOs on 82510???)&nbsp;&nbsp;&nbsp; =10 ???&nbsp;5-4&nbsp;&nbsp;&nbsp; reserved (00)&nbsp;3&nbsp;&nbsp;&nbsp; change RXRDY&nbsp; TXRDY pins from mode 0 to mode 1&nbsp;2&nbsp;&nbsp;&nbsp; clear XMIT FIFO&nbsp;1&nbsp;&nbsp;&nbsp; clear RCVR FIFO&nbsp;0&nbsp;&nbsp;&nbsp; enable clear XMIT and RCVR FIFO queues&nbsp;4-0&nbsp;&nbsp;&nbsp; (other purpose on 82510???)Notes:&nbsp;&nbsp;&nbsp; bit 0 must be set in order to write to other FCR bits&nbsp;&nbsp;&nbsp; bit 1 when set&nbsp;&nbsp;&nbsp; the RCVR FIFO is cleared and this bit is reset&nbsp;&nbsp;&nbsp; &nbsp; the receiver shift register is not cleared&nbsp;&nbsp;&nbsp; bit 2 when set&nbsp;&nbsp;&nbsp; the XMIT FIFO is cleared and this bit is reset&nbsp;&nbsp;&nbsp; &nbsp; the transmit shift register is not cleared&nbsp;&nbsp;&nbsp; due to a hardware bug, 16550 FIFOs don't work correctly (this&nbsp;&nbsp;&nbsp; &nbsp; was fixed in the 16550A)SeeAlso: #P0878Bitfields for serial port Line Control Register (LCR):Bit(s)&nbsp;&nbsp;&nbsp; Description&nbsp;&nbsp;&nbsp; (Table P0880)&nbsp;7&nbsp;&nbsp;&nbsp; =1&nbsp; divisor latch access bit (DLAB)&nbsp;&nbsp;&nbsp; =0&nbsp; receiver buffer, transmitter holding, or interrupt enable register&nbsp;&nbsp;&nbsp; &nbsp; access&nbsp;6&nbsp;&nbsp;&nbsp; set break enable. serial ouput is forced to spacing state and remains&nbsp;&nbsp;&nbsp; &nbsp; there.&nbsp;5-3&nbsp;&nbsp;&nbsp; PM2 PM1 PM0&nbsp;&nbsp;&nbsp; &nbsp;x&nbsp;&nbsp; x&nbsp;&nbsp;&nbsp; &nbsp;0 = no parity&nbsp;&nbsp;&nbsp; &nbsp;0&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp; &nbsp;1 = odd parity&nbsp;&nbsp;&nbsp; &nbsp;0&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp; &nbsp;1 = even parity&nbsp;&nbsp;&nbsp; &nbsp;1&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp; &nbsp;1 = high parity (sticky)&nbsp;&nbsp;&nbsp; &nbsp;1&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp; &nbsp;1 = low parity (sticky)&nbsp;&nbsp;&nbsp; &nbsp;x&nbsp;&nbsp; x&nbsp;&nbsp;&nbsp; &nbsp;1 = software parity&nbsp;2&nbsp;&nbsp;&nbsp; stop bit length (STB/SBL)&nbsp;&nbsp;&nbsp; 0&nbsp; one stop bit&nbsp;&nbsp;&nbsp; 1&nbsp; 2 stop bits with (word length 6, 7, 8)&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; 1.5 stop bits with word length 5&nbsp;1-0&nbsp;&nbsp;&nbsp; (WLS1-0, CL1-0)&nbsp;&nbsp;&nbsp; 00 word length is 5 bits&nbsp;&nbsp;&nbsp; 01 word length is 6 bits&nbsp;&nbsp;&nbsp; 10 word length is 7 bits&nbsp;&nbsp;&nbsp; 11 word length is 8 bitsSeeAlso: #P0881,#P0882,#P0883Bitfields for serial port Modem Control Register (MCR):Bit(s)&nbsp;&nbsp;&nbsp; Description&nbsp;&nbsp;&nbsp; (Table P0881)&nbsp;7-6&nbsp;&nbsp;&nbsp; reserved (0)&nbsp;5&nbsp;&nbsp;&nbsp; (82510 only) state of OUT0 pin&nbsp;4&nbsp;&nbsp;&nbsp; loopback mode for diagnostic testing of serial port&nbsp;&nbsp;&nbsp; output of transmitter shift register is looped back to receiver&nbsp;&nbsp;&nbsp; &nbsp; shift register input. In this mode, transmitted data is received&nbsp;&nbsp;&nbsp; &nbsp; immediately so that the CPU can verify the transmit data/receive&nbsp;&nbsp;&nbsp; &nbsp; data serial port paths.&nbsp;&nbsp;&nbsp; If OUT2 is disabled, there is no official way to generate an IRQ&nbsp;&nbsp;&nbsp; &nbsp; during loopback mode.&nbsp;3&nbsp;&nbsp;&nbsp; auxiliary user-designated output 2 (OUT2)&nbsp;&nbsp;&nbsp; because of external circuity OUT2 must be 1 to master-intr-enableing.&nbsp;&nbsp;&nbsp; BUG: Some Toshiba Laptops utilize this bit vice versa, newer Toshiba&nbsp;&nbsp;&nbsp; &nbsp; machines allow assignment of the bit's polarity in system setup.&nbsp;&nbsp;&nbsp; 82050: This bit is only effective, if the chip is being used with an&nbsp;&nbsp;&nbsp; &nbsp; externally-generated clock.&nbsp;2&nbsp;&nbsp;&nbsp; =1/0&nbsp; auxiliary user-designated output 1 (OUT1)&nbsp;&nbsp;&nbsp; should generally be cleared!!&nbsp;&nbsp;&nbsp; Some external hardware, e.g. c't MIDI interface (and compatibles) use&nbsp;&nbsp;&nbsp; &nbsp; this bit to change the 8250 input clock from 1,8432 MHz to 4Mhz&nbsp;&nbsp;&nbsp; &nbsp; (enabling MIDI-conformant baudrates) and switching to&nbsp;&nbsp;&nbsp; &nbsp; MIDI-compatible current loop connectors.&nbsp;1&nbsp;&nbsp;&nbsp; force request-to-send active (RTS)&nbsp;0&nbsp;&nbsp;&nbsp; force data-terminal-ready active (DTR)SeeAlso: #P0880,#P0882,#P0883Bitfields for serial port Line Status Register (LSR):Bit(s)&nbsp;&nbsp;&nbsp; Description&nbsp;&nbsp;&nbsp; (Table P0882)&nbsp;7&nbsp;&nbsp;&nbsp; =0&nbsp; reserved&nbsp;&nbsp;&nbsp; =1&nbsp; on some chips produced by UMC&nbsp;6&nbsp;&nbsp;&nbsp; transmitter shift and holding registers empty&nbsp;5&nbsp;&nbsp;&nbsp; transmitter holding register empty (THRE)&nbsp;&nbsp;&nbsp; Controller is ready to accept a new character to send.&nbsp;4&nbsp;&nbsp;&nbsp; break interrupt. the received data input is held in the zero bit&nbsp;&nbsp;&nbsp; &nbsp; state longer than the time of start bit + data bits + parity bit +&nbsp;&nbsp;&nbsp; &nbsp; stop bits.&nbsp;3&nbsp;&nbsp;&nbsp; framing error (FE). the stop bit that follows the last parity or data&nbsp;&nbsp;&nbsp; &nbsp; bit is a zero bit&nbsp;2&nbsp;&nbsp;&nbsp; parity error (PE). Character has wrong parity&nbsp;1&nbsp;&nbsp;&nbsp; overrun error (OE). a character was sent to the receiver buffer&nbsp;&nbsp;&nbsp; &nbsp; before the previous character in the buffer could be read. This&nbsp;&nbsp;&nbsp; &nbsp; destroys the previous character.&nbsp;0&nbsp;&nbsp;&nbsp; data ready. a complete incoming character has been received and sent&nbsp;&nbsp;&nbsp; &nbsp; to the receiver buffer register.SeeAlso: #P0880,#P0881,#P0883Bitfields for serial port Modem Status Register (MSR):Bit(s)&nbsp;&nbsp;&nbsp; Description&nbsp;&nbsp;&nbsp; (Table P0883)&nbsp;7&nbsp;&nbsp;&nbsp; data carrier detect (-DCD)&nbsp;6&nbsp;&nbsp;&nbsp; ring indicator (-RI)&nbsp;5&nbsp;&nbsp;&nbsp; data set ready (-DSR)&nbsp;4&nbsp;&nbsp;&nbsp; clear to send (-CTS)&nbsp;3&nbsp;&nbsp;&nbsp; delta data carrier detect (DDCD)&nbsp;2&nbsp;&nbsp;&nbsp; trailing edge ring indicator (TERI)&nbsp;1&nbsp;&nbsp;&nbsp; delta data set ready (DDSR)&nbsp;0&nbsp;&nbsp;&nbsp; delta clear to send (DCTS)Notes:&nbsp;&nbsp;&nbsp; bits 0-3 are reset when the CPU reads the MSR&nbsp;&nbsp;&nbsp; bit 4 is the Modem Control Register RTS during loopback test&nbsp;&nbsp;&nbsp; bit 5 is the Modem Control Register DTR during loopback test&nbsp;&nbsp;&nbsp; bit 6 is the Modem Control Register OUT1 during loopback test&nbsp;&nbsp;&nbsp; bit 7 is the Modem Control Register OUT2 during loopback testSeeAlso: #P0880,#P0881,#P0882<!--[endif]--><o:p></o:p></span>
+
+</div>
+
+
+</body>
+</html>
